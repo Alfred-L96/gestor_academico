@@ -2,6 +2,11 @@
 <html>
 <head>
     <title>Inicio de sesión</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Inicio de sesión</h1>
@@ -65,14 +70,28 @@
     }
     ?>
 
-    <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
-        <label for="usuario">Usuario:</label>
-        <input type="text" name="usuario" required><br>
-
-        <label for="contrasena">Contraseña:</label>
-        <input type="password" name="contrasena" required><br>
-
-        <input type="submit" value="Iniciar sesión">
-    </form>
+ <div class="login-container">
+        <div class="login-box">
+            <h1>Iniciar sesión</h1>
+            <form action="login.php" method="post">
+                <div class="form-group">
+                    <label>Usuario:</label>
+                    <input type="text" name="username" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Contraseña:</label>
+                    <input type="password" name="password" class="form-control" required>
+                </div>
+                <?php if (isset($error_message)): ?>
+                <div class="alert alert-danger" role="alert">
+                    <?php echo $error_message; ?>
+                </div>
+                <?php endif; ?>
+                <div class="form-group">
+                    <input type="submit" name="submit" value="Iniciar sesión" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
