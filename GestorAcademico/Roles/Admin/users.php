@@ -3,6 +3,27 @@
 <head>
     <meta charset='utf-8'>
     <title>Mostrar imagenes</title>
+    <style>
+        /* Estilo para la tabla */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        /* Estilo para las imágenes */
+        .user-image {
+            width: 50px;
+        }
+    </style>
 <body>
     <center>
         <table border="2">
