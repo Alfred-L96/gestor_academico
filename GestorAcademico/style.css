@@ -1,0 +1,68 @@
+body {
+  background-color: #f3f3f3;
+  background-image: url("https://conalepmanzanillo061.edu.mx/aulavirtual/pluginfile.php/1/theme_moove/sliderimage1/1674656522/Banner01_aulav.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  image-rendering: optimizeQuality;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.login-box {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  color: #be1019;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  border-color: #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 12px;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #1d090a;
+  border-color: #2b1112;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #0a58a1;
+  border-color: #0a58a1;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 120%;
+  z-index: -1;
+}
