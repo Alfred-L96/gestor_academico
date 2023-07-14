@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"
+    <meta charset="utf-8">
     <title>Alta de usuarios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./alta_style.css">
 </head>
 <body>
     <h1>Alta de usuarios</h1>
